@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+		<!-- App Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			
+			<!-- Modal -->
+			<div class="modal fade" id="showNotes" tabindex="-1" role="dialog" aria-labelledby="showNoteslb" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Notes for Article:</h2>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid note-list">
+							</div>
+							<textarea id="modalNewNote" placeholder="New Note"></textarea> 
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-success btn-lg save-note" data-dismiss="modal">Save Note</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of Modal -->
+			<!-- Nav bar -->
+			<nav class="navbar" role="navigation" style="background-color: #8E9D9E">
+				<div class="container navbar-left">
+					<div class="navbar-header align-left">
+						<a class="navbar-brand navbar-left" href="#" style="color:white">Saved Articles</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only" style="color: white">Toggle navigation</span>
+						<span class="icon-bar" style="background-color: white"></span>
+						<span class="icon-bar" style="background-color: white"></span>
+						<span class="icon-bar" style="background-color: white"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color:white">
+						<ul class="nav navbar-nav" style="color:white">
+							<li><a href="index.html" class="navbar-item">Home</a></li>
+							<li><a href="" class="navbar-item">Saved Articles</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- End of Nav bar -->
+			
+			
+			<!-- Jumbotron -->
+			<div class="jumbotron z-depth-5">
+				<h1 class="display-3 text-center">Saved Articles</h1>
+				<p class="lead text-center">NY Times Technology News</p>
+				
+			</div>
+			<!-- End of Jumbotron -->
+			
+			<div class="container-fluid article-panels">
+				
+			</div>
+			<footer  class="footer">
+				<!-- <div class="container"> -->
+				<p>New York Times Mongo Scraper</p>
+				<!-- </div> -->
+			</footer>
+		</div>
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- App JS -->
+		<script src="js/saved.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,177 @@
+html,body{
+	height: 100%;
+}
+body{
+	margin-top: 0;
+	display:block;
+	background-image: url(../images/paper.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center; 
+    background-repeat: no-repeat;
+	
+
+}
+
+.navbar{	
+	margin-bottom: 0;
+}
+
+.jumbotron {
+	margin-top: 0;
+	margin-bottom:200px;
+	z-index: 3;
+	background-image: url("../images/tech1.jpg");
+	background-size: cover;
+	background-position: center center; 
+    background-repeat: no-repeat;
+    height: 820px;
+    border: 2px solid black;
+
+}
+
+h1.display-3{
+	margin-top: 150px;
+	font-family:'Cormorant SC', serif;
+	font-size: 100px;
+	color:white;
+
+	background: url(../images/paper.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+p.lead {
+	font-family: 'Noto Serif', serif;
+	font-size: 30px;
+	color:white;
+}
+.navbar-item{
+	color:white;
+}
+.navbar-item:hover{
+	color:black;
+}
+
+.scrape-btn{
+	width: 200px;
+	height: 40px;
+	color:black;
+	background-color: #F9F1F1;
+
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.scrape-btn:hover{	
+	background-color: green;   
+    color: white;
+}
+
+.panel-heading{
+	background-color: #8E9D9E;
+	
+}
+.panel-heading h3{
+	display:inline-block;
+	width:80%;
+}
+.panel-a{
+	color: white;
+	width:50%;
+}
+
+.panel-a:hover{
+	color: white;
+	text-decoration: underline;
+}
+.note-list{
+	
+}
+
+.list-item{
+	border: 1px solid black;
+	border-radius: 4px;
+	margin:2px 0 2px 0;
+	/*width: 100%;*/
+	height: 80px;
+	/*text-align: left;*/
+	font-size: 20px;
+}
+
+.delete-note{
+	
+	display:inline-block;
+	
+}
+.btn-delete-note{
+	float:right;	
+	display:inline-block;
+	margin-left: 400px;
+}
+a.save{	
+	float:right;
+}
+
+a.save, a.delete, a.notes{
+	display:inline;
+	width: 150px;
+	height: 40px;
+	font-size: 15px;
+	text-align: center;
+	top: 20px;
+}
+
+div.panel-body{
+	font-size: 18px;
+
+}
+
+.modal-footer button.save-note{
+	font-size:18px;
+	width: 200px;
+	height: 60px
+	
+}
+
+.footer{
+	 position: relative;
+	 margin-bottom:0;
+	 height:90px;
+    /*clear:both;*/
+	background-color: #8E9D9E;
+	color: white;
+	padding-top: 40px;
+}
+
+.footer p{
+	margin-left: 20px;
+	text-align: left;
+	font-size: 20px;
+}
+
+#modalNewNote{
+	height: 200px;
+	resize:none;
+	border: none;
+	font-size: 25px;
+}
+
+#modalNewNote:selected{
+	border: 2px solid blue;
+}
+
+
+#article-record-count{
+	
+	font-size: 30px;
+}
