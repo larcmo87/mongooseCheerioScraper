@@ -36,10 +36,10 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("public"));
 
 
-
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/myTimesCheerioScraper";
 //Mongoose data base connection configuration. Name of DB will be yTimesCheerioScraper
 
-mongoose.connect("mongodb://localhost/myTimesCheerioScraper");
+mongoose.connect(MONGODB_URI);
 var db = mongoose.connection;
 
 
