@@ -59,6 +59,6 @@ db.once("open", () =>{
 
 require("./routes/savedArticles-routes.js")(app);
 
-app.listen(3000, function(){
+app.listen(PORT, function(){
 	console.log("App running on port " + PORT);
 });
